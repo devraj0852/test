@@ -9,3 +9,10 @@ app.get ('/:id',(req, res) =>{
 app.listen(port,() =>{
     console.log(`server is running ${port}`);
 })
+app.get ('/:id',(req, res) =>{
+    res.send({_id: req.params.id})
+})
+
+app.listen(port,() =>{
+    console.log(`server is running ${port}`);
+})
